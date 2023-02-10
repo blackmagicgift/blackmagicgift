@@ -34,77 +34,126 @@
 
 
 <div  style="display: none;" id="app">
-<div id="hero-slides">
-  <div id="header">
-    <div id="logo"></div>
-  </div>
-  <div id="slides-cont">
-    <div class="button" id="next"></div>
-    <div class="button" id="prev"></div>
-    <div id="slides">
-      <div class="slide" style="background-image: url(/assets/images/IMG_20210924_123445_955.jpg)">
-        <div class="number">01</div>
-        <div class="body">
-         
-          <div class="headline">Stunning Beauty.</div>
-            </a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url(/assets/images/IMG_20211016_162245_491.jpg)">
-        <div class="number">02</div>
-        <div class="body">
-        
-          <div class="headline">Radiant Smile.</div>
-            </a>
-        </div>
-      </div>
-      <div class="slide" style="background-image: url(/assets/images/IMG_20230208_125019_535.jpg)">
-        <div class="number">03</div>
-        <div class="body">
 
-          <div class="headline">Warm Heart.</div>
-            </a>
-        </div>
+  <div class="slider" id="slider" style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);"> 
+    <div class="slider__content" id="slider-content">
+      <div class="slider__images">
+        <div class="slider__images-item slider__images-item--active" data-id="1"><img src="/assets/images/IMG_20210924_123445_955.jpg"/></div>
+        <div class="slider__images-item" data-id="2"><img src="/assets/images/IMG_20211016_162245_491.jpg"/></div>
+        <div class="slider__images-item" data-id="3"><img src="/assets/images/IMG_20230208_125019_535.jpg"/></div>
+        <div class="slider__images-item" data-id="4"><img src="/assets/images/received_881400799175893.jpeg"/></div>
+        <div class="slider__images-item" data-id="5"><img src="/assets/images/signal-2022-03-07-11-32-57-515.jpg"/></div>
+        <div class="slider__images-item" data-id="6"><img src="/assets/images/signal-2022-03-20-08-29-35-552.jpg"/></div>
+        <div class="slider__images-item" data-id="7"><img src="/assets/images/signal-2022-04-11-11-56-19-797.jpg"/></div>
+        <div class="slider__images-item" data-id="8"><img src="/assets/images/signal-2022-11-07-19-29-44-968.jpg"/></div>
+        <div class="slider__images-item" data-id="9"><img src="/assets/images/signal-2023-01-21-17-50-58-382.jpg"/></div>
+        <div class="slider__images-item" data-id="10"><img src="/assets/images/signal-2023-01-30-19-03-22-767.jpg"/></div>
       </div>
-      <div class="slide" style="background-image: url(/assets/images/received_881400799175893.jpeg)">
-        <div class="number">04</div>
-        <div class="body">
-
-          <div class="headline">Joyful Presence.</div>
-            </a>
+      <div class="slider__text">
+        <div class="slider__text-item slider__text-item--active" data-id="1">
+          <div class="slider__text-item-head">
+            <h3>Stunning Beauty.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your beauty takes my breath away, every time I see you."</p>
+          </div>
         </div>
-      </div>
-      <div class="slide" style="background-image: url(/assets/images/signal-2022-03-07-11-32-57-515.jpg)">
-        <div class="number">05</div>
-        <div class="body">
-
-          <div class="headline">Bright Mind.</div>
-            </a>
+        <div class="slider__text-item" data-id="2">
+          <div class="slider__text-item-head">
+            <h3>Radiant Smile.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"You have a heart that is warm, loving, and full of compassion."</p>
+          </div>
         </div>
-      </div>
-      <div class="slide" style="background-image: url(/assets/images/signal-2022-03-20-08-29-35-552.jpg)">
-        <div class="number">06</div>
-        <div class="body">
-
-          <div class="headline">Gentle Spirit.</div>
-            </a>
+        <div class="slider__text-item" data-id="3">
+          <div class="slider__text-item-head">
+            <h3>Warm Heart.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Being near you brings me joy and peace, your presence is everything to me."</p>
+          </div>
         </div>
-      </div>
-      <div class="slide" style="background-image: url(/assets/images/signal-2022-04-11-11-56-19-797.jpg)">
-        <div class="number">07</div>
-        <div class="body">
-
-          <div class="headline">Precious Love.</div>
-            </a>
+        <div class="slider__text-item" data-id="4">
+          <div class="slider__text-item-head">
+            <h3>Joyful Presence.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your gentle spirit and kindness make my heart swell with love."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="5">
+          <div class="slider__text-item-head">
+            <h3>Bright Mind.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your mind is sharp and full of brilliance, it's one of the many things I admire about you."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="6">
+          <div class="slider__text-item-head">
+            <h3>Gentle Spirit.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your joyful presence fills me with happiness and peace, it's a true blessing."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="7">
+          <div class="slider__text-item-head">
+            <h3>Precious Love.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your love is precious, unique, and incomparable. I feel so lucky to have you."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="8">
+          <div class="slider__text-item-head">
+            <h3>Infinite Grace.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your joyful presence is a ray of sunshine in my life."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="9">
+          <div class="slider__text-item-head">
+            <h3>Heartwarming Spirit.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"You never ceases to amaze me."</p>
+          </div>
+        </div>
+        <div class="slider__text-item" data-id="10">
+          <div class="slider__text-item-head">
+            <h3>Kind Heart.</h3>
+          </div>
+          <div class="slider__text-item-info">
+            <p>"Your gentle spirit fills my heart with love and peace."</p>
+          </div>
         </div>
       </div>
     </div>
-    <div id="next-catch"></div>
-    <div id="prev-catch"></div>
+    <div class="slider__nav">
+      <div class="slider__nav-arrows">
+        <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+        <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+      </div>
+      <div class="slider__nav-dots" id="slider-dots">
+        <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+        <div class="slider__nav-dot" data-id="2"></div>
+        <div class="slider__nav-dot" data-id="3"></div>
+        <div class="slider__nav-dot" data-id="4"></div>
+        <div class="slider__nav-dot" data-id="5"></div>
+        <div class="slider__nav-dot" data-id="6"></div>
+        <div class="slider__nav-dot" data-id="7"></div>
+        <div class="slider__nav-dot" data-id="8"></div>
+        <div class="slider__nav-dot" data-id="9"></div>
+        <div class="slider__nav-dot" data-id="10"></div>
+      </div>
+    </div>
   </div>
 
+
 </div>
-</div>
 
 
 
@@ -114,6 +163,6 @@
 
 
 
-<script src="/assets/script.js" type="text/javascript"></script>
+<script src="/assets/script.js"></script>
 </body>
 </html>
