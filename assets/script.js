@@ -348,7 +348,7 @@ function lerp({ x, y }, { x: targetX, y: targetY }) {
 	  slider.next();
 	});
 	
-	timer = setTimeout(autoSlide, 5000);
+	timer = setTimeout(autoSlide, 2000);
   }
   
   function stopAutoSlide () {
@@ -361,7 +361,7 @@ function lerp({ x, y }, { x: targetX, y: targetY }) {
   sliderEl.addEventListener('mousemove', stopAutoSlide);
   sliderEl.addEventListener('touchstart', stopAutoSlide);
   
-  timer = setTimeout(autoSlide, 2000);
+  timer = setTimeout(autoSlide, 1000);
 
 
 
