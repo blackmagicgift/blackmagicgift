@@ -78,7 +78,7 @@ const heart = document.querySelector(".heart");
 heart.addEventListener("click", function() {
 
 const audio = new Audio();
-  audio.src = 'find/src/assets/audio/Mashup Love Is Gone.mp3';
+  audio.src = '/assets/audio/Mashup Love Is Gone.mp3';
   audio.autoplay = true;
   audio.play();
 
