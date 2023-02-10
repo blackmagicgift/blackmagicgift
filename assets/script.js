@@ -73,7 +73,6 @@ prev.forEach(n => n.addEventListener('click', () => !currentlyDemoing && goToPag
 
 
 
-
 const heart = document.querySelector(".heart");
 heart.addEventListener("click", function() {
 
@@ -82,27 +81,30 @@ const audio = new Audio();
   audio.autoplay = true;
   audio.play();
 
-const answer = prompt("What's The Book You Hate The Most?");
-if (answer === "thebible") {
-	const background = document.getElementById("background");
-	let color = 0;
-	const animation = setInterval(() => {
-	  color += 5;
-	  background.style.backgroundColor = `rgb(${color}, ${color}, ${color})`;
-	  if (color >= 255) {
-		clearInterval(animation);
-	  }
-	}, 50);
-	const app = document.getElementById("app");
-	background.style.opacity = 0;
-	app.style.display = "block";
-
-	setTimeout(() => {
-  		background.style.display = "none";
-  		app.style.opacity = 1;
-	}, 500);
-
-	sleep(100).then(demo);
-
+  let correctAnswer = false;
+  while (!correctAnswer) {
+	const answer = prompt("What's The Book You Hate The Most?");
+	if (answer === "thebible") {
+	  correctAnswer = true;
+	  const background = document.getElementById("background");
+	  let color = 0;
+	  const animation = setInterval(() => {
+		color += 5;
+		background.style.backgroundColor = `rgb(${color}, ${color}, ${color})`;
+		if (color >= 255) {
+		  clearInterval(animation);
+		}
+	  }, 50);
+	  const app = document.getElementById("app");
+	  background.style.opacity = 0;
+	  app.style.display = "block";
+  
+	  setTimeout(() => {
+		background.style.display = "none";
+		app.style.opacity = 1;
+	  }, 500);
+  
+	  sleep(100).then(demo);
+	}  
 
 }});
